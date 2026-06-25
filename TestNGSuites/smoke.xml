@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Smoke Suite">
+    <test verbose="2" preserve-order="true" name="Android Smoke Test">
+        <parameter name="platform" value="android"/>
+        <groups>
+            <run>
+                <include name="Smoke"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="Tests.eCommerce_tc_4_Hybrid"/>
+            <class name="Tests.eCommerce_tc_5_AddToCart"/>
+        </classes>
+    </test>
+</suite>

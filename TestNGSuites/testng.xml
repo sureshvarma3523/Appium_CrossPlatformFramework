@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+<!--    Useful for parallel testing-->
+<!--    <suite name="All Test Suite" parallel="tests" thread-count="2">-->
+    <test verbose="2" preserve-order="true" name="Android Test">
+        <parameter name="platform" value="android"/>
+        <classes>
+            <class name="Tests.eCommerce_tc_4_Hybrid">
+                <methods>
+                    <include name="FillForm"/>
+                </methods>
+            </class>
+            <class name="Tests.eCommerce_tc_5_AddToCart"/>
+        </classes>
+    </test>
+<!--    This test will run in iOS-->
+<!--    <test verbose="2" preserve-order="true" name="iOS Test">-->
+<!--        <parameter name="platform" value="ios"/>-->
+<!--        <classes>-->
+<!--            <class name="Tests.eCommerce_tc_4_Hybrid">-->
+<!--                <methods>-->
+<!--                    <include name="FillForm"/>-->
+<!--                </methods>-->
+<!--            </class>-->
+<!--            <class name="Tests.eCommerce_tc_5_AddToCart"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+</suite>
