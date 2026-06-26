@@ -41,7 +41,7 @@ public class DriverFactory {
 
         //To Run in Docker/Linux(Jenkins)
         options.setApp("C:\\Users\\LENOVO\\Documents\\Workspace\\Learning\\Appium_learning"
-                + "\\AppiumFrameworkLearn - Mine\\untitled\\src\\test\\java\\Resources\\"
+                + "\\AppiumFrameworkLearn - Mine\\src\\test\\java\\Resources\\"
                 + prop.getProperty("androidApp", "General-Store.apk"));
         String chromedriver = prop.getProperty("chromedriverPath");
         if(chromedriver!=null && !chromedriver.isEmpty()){
